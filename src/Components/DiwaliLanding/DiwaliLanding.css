@@ -1,0 +1,95 @@
+/* Base styles for mobile-first (smallest screens ~200px) */
+.landing {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+  overflow: hidden;
+  color: rgb(214, 44, 44);
+}
+
+.fireworks-canvas {
+  position: fixed; /* cover entire screen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
+  text-align: left;
+  z-index: 2;
+  color: #FFD700;
+  font-family: 'Arial', sans-serif;
+  padding: 0 5px;
+  width: auto;
+}
+
+.overlay h1 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.diya-image {
+  width: 25px;
+  height: auto;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+/* Small mobile phones (~300px) */
+@media (min-width: 201px) and (max-width: 320px) {
+  .overlay h1 { font-size: 1.2rem; }
+  .overlay p { font-size: 0.75rem; }
+  .diya-image { width: 28px; }
+}
+
+/* Typical mobile (~321px–480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .overlay {
+    bottom: 15px;
+    left: 10px;
+    right: 10px;
+  }
+  .overlay h1 { font-size: 1.5rem; }
+  .overlay p { font-size: 0.85rem; }
+  .diya-image { width: 35px; }
+}
+
+/* Large phones / phablets (~481px–768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .overlay {
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+  }
+  .overlay h1 { font-size: 1.8rem; }
+  .overlay p { font-size: 0.95rem; }
+  .diya-image { width: 40px; }
+}
+
+/* Tablets and desktops (>768px) */
+@media (min-width: 769px) {
+  .overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    padding: 0 20px;
+  }
+  .overlay h1 { font-size: 2rem; margin-bottom: 10px; }
+  .overlay p { font-size: 1rem; max-width: 600px; margin: 0 auto 15px; line-height: 1.5; }
+  .diya-image { width: 60px; margin-top: 15px; }
+}

@@ -1,0 +1,99 @@
+/* Giveaway container */
+.giveaway-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff; /* ✅ plain white */
+  font-family: "Poppins", sans-serif;
+  padding: 40px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* Left - Text section */
+.giveaway-text {
+  flex: 1 1 400px;
+}
+
+.giveaway-text h1 {
+  font-size: 1.8rem;
+  color: #ff6f00;
+  margin-bottom: 10px;
+}
+
+.giveaway-text p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.giveaway-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.giveaway-text li {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Right - Image section */
+.giveaway-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.giveaway-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive: for mobile/tablets */
+@media (max-width: 768px) {
+  .giveaway-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .giveaway-image img {
+    max-width: 250px;
+    margin-top: 15px;
+  }
+
+  .giveaway-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .giveaway-text p,
+  .giveaway-text li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 400px) {
+  .giveaway-container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .giveaway-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .giveaway-text p,
+  .giveaway-text li {
+    font-size: 0.8rem;
+  }
+
+  .giveaway-image img {
+    width: 90%;
+  }
+}
