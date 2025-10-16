@@ -1,15 +1,17 @@
-/* Base styles for mobile-first (smallest screens ~200px) */
+/* 🌟 Base Styles (Mobile-First) */
 .landing {
   position: relative;
   width: 100vw;
   height: 100vh;
   cursor: pointer;
   overflow: hidden;
-  color: rgb(214, 44, 44);
+  background-color: yellow; /* Festive bright background */
+  color: #d62828; /* Warm red tone for contrast */
 }
 
+/* 🔥 Fireworks Canvas - covers whole screen */
 .fireworks-canvas {
-  position: fixed; /* cover entire screen */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -17,79 +19,108 @@
   z-index: 1;
 }
 
+/* ✨ Overlay text and diya */
 .overlay {
   position: absolute;
-  bottom: 10px;
-  left: 5px;
-  right: 5px;
-  text-align: left;
   z-index: 2;
-  color: #FFD700;
-  font-family: 'Arial', sans-serif;
-  padding: 0 5px;
-  width: auto;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #ffcc00;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 10px;
+  width: 90%;
 }
 
 .overlay h1 {
-  font-size: 1rem;
-  margin-bottom: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #ff6600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .overlay p {
-  font-size: 0.7rem;
-  line-height: 1.2;
-  margin-bottom: 5px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
 }
 
 .diya-image {
-  width: 25px;
+  width: 35px;
   height: auto;
-  margin-top: 5px;
+  margin-top: 10px;
   display: inline-block;
 }
 
-/* Small mobile phones (~300px) */
-@media (min-width: 201px) and (max-width: 320px) {
-  .overlay h1 { font-size: 1.2rem; }
-  .overlay p { font-size: 0.75rem; }
-  .diya-image { width: 28px; }
+/* 📱 Small phones (up to 320px) */
+@media (max-width: 320px) {
+  .overlay {
+    bottom: 8%;
+    padding: 0 5px;
+  }
+  .overlay h1 {
+    font-size: 1.1rem;
+  }
+  .overlay p {
+    font-size: 0.75rem;
+  }
+  .diya-image {
+    width: 25px;
+  }
 }
 
-/* Typical mobile (~321px–480px) */
+/* 📱 Regular phones (321px–480px) */
 @media (min-width: 321px) and (max-width: 480px) {
   .overlay {
-    bottom: 15px;
-    left: 10px;
-    right: 10px;
+    bottom: 10%;
   }
-  .overlay h1 { font-size: 1.5rem; }
-  .overlay p { font-size: 0.85rem; }
-  .diya-image { width: 35px; }
+  .overlay h1 {
+    font-size: 1.4rem;
+  }
+  .overlay p {
+    font-size: 0.85rem;
+  }
+  .diya-image {
+    width: 30px;
+  }
 }
 
-/* Large phones / phablets (~481px–768px) */
+/* 📱 Large phones / small tablets (481px–768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .overlay {
-    bottom: 20px;
-    left: 15px;
-    right: 15px;
+    bottom: 12%;
   }
-  .overlay h1 { font-size: 1.8rem; }
-  .overlay p { font-size: 0.95rem; }
-  .diya-image { width: 40px; }
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+  .overlay p {
+    font-size: 1rem;
+  }
+  .diya-image {
+    width: 45px;
+  }
 }
 
-/* Tablets and desktops (>768px) */
+/* 💻 Tablets and desktops */
 @media (min-width: 769px) {
   .overlay {
     top: 50%;
     left: 50%;
+    bottom: auto;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 90%;
-    padding: 0 20px;
+    width: 80%;
   }
-  .overlay h1 { font-size: 2rem; margin-bottom: 10px; }
-  .overlay p { font-size: 1rem; max-width: 600px; margin: 0 auto 15px; line-height: 1.5; }
-  .diya-image { width: 60px; margin-top: 15px; }
+  .overlay h1 {
+    font-size: 2.2rem;
+  }
+  .overlay p {
+    font-size: 1.1rem;
+  }
+  .diya-image {
+    width: 60px;
+  }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
+// import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
@@ -19,7 +19,7 @@ const App = () => {
         <DiwaliLanding onEnter={() => setShowMain(true)} />
       ) : (
         <Router>
-          <Navbar />
+          {/* <Navbar /> */}
           <Hero />
           <div className="container">
             <Title subtitle="Give Away" title="Your Dream Prize Awaits" />
