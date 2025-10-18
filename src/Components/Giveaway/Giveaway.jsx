@@ -17,11 +17,11 @@ export default function Giveaway() {
 
         <h3>Here are your challenges 👇</h3>
         <ul>
-          <li>⿡ Comment the most on this Giveaway post.</li>
-          <li>⿢ Tag 7 friends and ask them to follow our page in the Giveaway post.</li>
-          <li>⿣ Tell us — Which is the best cracker you’ve ever busted in the Giveaway Post? (Best answer wins)</li>
-          <li>⿤ Create and send us your Brandkaro logo design in DMs.</li>
-          <li>⿥ Share your best Diwali memory in the Giveaway post comments.</li>
+          <li>1 Comment the most on this Giveaway post.</li>
+          <li>2 Tag 7 friends and ask them to follow our page in the Giveaway post.</li>
+          <li>3 Tell us — Which is the best cracker you’ve ever busted in the Giveaway Post? (Best answer wins)</li>
+          <li>4 Create and send us your Brandkaro logo design in DMs.</li>
+          <li>5 Share your best Diwali memory in the Giveaway post comments.</li>
         </ul>
 
         <p className="giveaway-line">ये दिवाली Brandkaro वाली 🪔</p>

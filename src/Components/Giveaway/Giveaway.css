@@ -39,10 +39,22 @@
   margin-top: 10px;
 }
 
+/* List items with proper icon alignment */
 .giveaway-text li {
   font-size: 0.95rem;
   margin-bottom: 6px;
   color: #333;
+
+  /* Flex to align icon and text properly */
+  display: flex;
+  align-items: flex-start;
+}
+
+.giveaway-text li span.icon {
+  display: inline-block;
+  width: 1.2em; /* same width for all icons */
+  margin-right: 5px; /* space between icon and text */
+  text-align: center;
 }
 
 /* Highlighted Hindi line */
