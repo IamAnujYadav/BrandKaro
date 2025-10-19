@@ -36,7 +36,7 @@
 .overlay h1 {
   font-size: 1.3rem;
   margin-bottom: 8px;
-  color: #ff6600;
+  color: red;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -62,7 +62,7 @@
     padding: 0 5px;
   }
   .overlay h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .overlay p {
     font-size: 0.75rem;
@@ -78,10 +78,10 @@
     bottom: 10%;
   }
   .overlay h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .overlay p {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
   .diya-image {
     width: 30px;
