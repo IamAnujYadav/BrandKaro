@@ -36,7 +36,7 @@ const Contact = () => {
             <div className='contact'>
                 <div className="contact-col">
                     <h3>Write the Diwali message <img src={msg_icon} alt="" /></h3>
-                    <p>Got a project in mind, a question about our services, or just want to say hello? We'd love to hear from you! Reach out to us, and a member of the Brandkaro team will get back to you shortly.</p>
+                    {/* <p>Got a project in mind, a question about our services, or just want to say hello? We'd love to hear from you! Reach out to us, and a member of the Brandkaro team will get back to you shortly.</p> */}
                     <ul>
                         <li> <img src={mail_icon} alt="" />brandKaro.email@gmail.com</li>
                         <li><img src={phone_icon} alt="" />+91 9236228554</li>
