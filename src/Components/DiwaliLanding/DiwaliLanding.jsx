@@ -108,8 +108,9 @@ export default function DiwaliLanding({ onEnter }) {
 
       <div className="overlay">
         <h1>
-         Let this Diwali light up your world with joy and opportunities.<span style={{ color: '#FF4500' }}>Brand Karo</span> team wishes you a khushiya waali Diwali
+         Let this Diwali light up your world with joy and opportunities.
         </h1>
+        <p><span style={{ color: '#FF4500' }}>Brand Karo</span> team wishes you a khushiya waali Diwali</p>
         {/* <p>Celebrate the festival of lights with joy and happiness!</p> */}
         <img src={diyaImage} alt="Diya" className="diya-image" />
         <img src={diyaImage} alt="Diya" className="diya-image" />
